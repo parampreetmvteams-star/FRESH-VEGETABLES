@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESH VEGETABLES</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font-link Lato  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <!-- navbar top -->
+        <div class="container nav-top">
+            <div class="nav-top-items">
+                <a href="">About Us</a>
+                <a href="">My Account</a>
+                <a href="">Wishlist</a>
+                <a href="">Order Tracking</a>
+            </div>
+
+            <div class="nav-top-center">
+                <p>100% Secure delivery without contacting the courier</p>
+            </div>
+
+            <div class="need-help">
+                <p>Need help? Call Us: <span>+1800900122</span></p>
+                <p >English</p>
+                <button class="english-language"><img src="images/english-down-icon.svg" alt=""></button>
+                <p>INR</p>
+                <button><img src="images/english-down-icon.svg" alt=""></button>
+            </div>
+        </div> 
+        <div class="border-bottom"></div>
+
+        <!-- nav-center  -->
+        <div class="container nav-center">
+
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="nav-input">
+                <input type="text" placeholder="Search for Products">
+                <button>Search</button>
+            </div>
+
+            <div class="nav-center-right">
+                <div class="became-vendor">
+                    <p>Became Vendor</p>
+                    <a href="">
+                        <svg width="17" height="19" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6633 6.55998L12.6233 3.51998L11.6633 4.47998L14.49 7.30665H0.25V8.63998H14.5433L11.6633 11.52L12.6233 12.48L15.6633 9.43998C16.0544 9.04887 16.25 8.56887 16.25 7.99998C16.25 7.43109 16.0544 6.95109 15.6633 6.55998Z" fill="#3BB77E"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="became-icon">
+                    <div class="vendor-icons">
+                        <a href="">
+                        <img src="images/compare.svg" alt="">
+                        </a>
+                        <span>0</span>
+                        <p>Compare</p>
+                    </div>
+
+                    <div class="vendor-icons">
+                        <a href="">
+                        <svg width="30px" height="30px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><path d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"/></svg>
+                        </a>
+                        <span>0</span>
+                        <p>Wishlist</p>
+                    </div>
+
+                    <div class="vendor-icons">
+                        <a href="">
+                        <img src="images/cart.svg" alt="">
+                        </a>
+                        <span>0</span>
+                        <p>Cart</p>
+                    </div>
+
+                    <div class="vendor-icons">
+                        <a href="">
+                        <img src="images/account.svg" alt="">
+                        </a>
+                        <p>Account</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="border-bottom"></div>
+
+        <div class="container nav-end">
+            <a href="" class="browse-categories">
+                <img src="images/browse.svg" alt="">Browse All Categories
+                <img src="images/browse-icon.svg" alt="">
+            </a>
+            <div class="nav-items">
+
+                <a href="" class="nav-items-name">
+                    <img src="images/hot-deals.svg" alt="">Hot Deals
+                </a>
+
+                <a href="" class="nav-items-name active">Home 
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.52 1.97334L4.24 5.28001C4.16889 5.33334 4.08889 5.36001 4 5.36001C3.91111 5.36001 3.83111 5.33334 3.76 5.28001L0.48 1.97334L0 2.45334L3.28 5.73334C3.49333 5.92889 3.73333 6.02667 4 6.02667C4.26667 6.02667 4.50667 5.92889 4.72 5.73334L8 2.45334L7.52 1.97334Z" fill="#3BB77E"/>
+                    </svg>
+                </a>
+
+                <a href="" class="nav-items-name">About
+                </a>
+
+                <a href="" class="nav-items-name">Shop
+                    <img src="images/nav-items-icon.svg" alt="">
+                </a>
+
+                <a href="" class="nav-items-name">Vendors
+                    <img src="images/nav-items-icon.svg" alt="">
+                </a>
+
+                <a href="" class="nav-items-name">Mega Menu
+                    <img src="images/nav-items-icon.svg" alt="">
+                </a>
+
+                <a href="" class="nav-items-name">Blog
+                    <img src="images/nav-items-icon.svg" alt="">
+                </a>
+
+                <a href="" class="nav-items-name">Pages
+                    <img src="images/nav-items-icon.svg" alt="">
+                </a>
+
+                <a href="" class="nav-items-name">Contact
+                </a>
+            </div>
+
+            <div class="nav-support-center">
+                <img src="images/support-center.svg" alt="">
+                <div class="support-center-content">
+                    <a href="">1900888123</a><br>
+                    <p>24/7 Support Center</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom"></div>
+
+    </header>
+
+    <main class="container">
+
+        <!-- HERO SECTION  -->
+        <section class="hero-section swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/hero-image.png" alt="">
+                <div class="hero-content">
+                    <h1>Fresh Vegetables <br>Big discount</h1>
+                    <p>Save up to 50% off on your first order</p>
+                    <div class="email-section">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div> 
+                </div>
+                    <button class="left arrow swiper-button-prev">
+                        <img src="images/hero-left-arrow.svg" alt="">
+                    </button>
+                    <button class="right arrow swiper-button-next">
+                        <img src="images/hero-right-arrow.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/hero-image.png" alt="">
+                <div class="hero-content">
+                    <h1>Fresh Vegetables <br>Big discount</h1>
+                    <p>Save up to 50% off on your first order</p>
+                    <div class="email-section">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div> 
+                </div>
+                    <button class="left arrow swiper-button-prev">
+                        <img src="images/hero-left-arrow.svg" alt="">
+                    </button>
+                    <button class="right arrow swiper-button-next">
+                        <img src="images/hero-right-arrow.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/hero-image.png" alt="">
+                <div class="hero-content">
+                    <h1>Fresh Vegetables <br>Big discount</h1>
+                    <p>Save up to 50% off on your first order</p>
+                    <div class="email-section">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div> 
+                </div>
+                    <button class="left arrow swiper-button-prev">
+                        <img src="images/hero-left-arrow.svg" alt="">
+                    </button>
+                    <button class="right arrow swiper-button-next">
+                        <img src="images/hero-right-arrow.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/hero-image.png" alt="">
+                <div class="hero-content">
+                    <h1>Fresh Vegetables <br>Big discount</h1>
+                    <p>Save up to 50% off on your first order</p>
+                    <div class="email-section">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div> 
+                </div>
+                    <button class="left arrow swiper-button-prev">
+                        <img src="images/hero-left-arrow.svg" alt="">
+                    </button>
+                    <button class="right arrow swiper-button-next">
+                        <img src="images/hero-right-arrow.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Featured Categories -->
+
+        <section class="featured-categories-main swiper categories-mySwiper">
+            <div class="featured-categories-section">
+                <div class="featured-categories">
+                    <h2>Featured Categories</h2>
+                    <div class="categories">
+                        <a href="">Cake & Milk</a>
+                        <a href="">Coffes & Teas</a>
+                        <a href="">Pet Foods</a>
+                        <a href="">Vegetables</a>
+                    </div>
+                </div>
+                    <div class="categories-arrow categories-swiper-pagination">
+                        <button class="arrow2 categories-swiper-button-prev">
+                            <img src="images/left-arrow.svg" alt="">
+                        </button>
+                        <button class="arrow2 categories-swiper-button-next">
+                            <img src="images/right-arrow.svg" alt="">
+                        </button>
+                    </div>
+            </div>
+
+            <div class="categories-content swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #F2FCE4;">
+                        <img src="images/category1.png" alt="">
+                        <h6>Cake & Milk</h6>
+                        <p>11 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FFFCEB;">
+                        <img src="images/category2.png" alt="">
+                        <h6>Oganic Kiwi</h6>
+                        <p>10 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #ECFFEC;">
+                        <img src="images/category3.png" alt="">
+                        <h6>Peach</h6>
+                        <p>9 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FEEFEA;">
+                        <img src="images/category4.png" alt="">
+                        <h6>Read Apple</h6>
+                        <p>10 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FFF3EB;">
+                        <img src="images/category5.png" alt="">
+                        <h6>Snacks</h6>
+                        <p>5 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FFF3FF;">
+                        <img src="images/category6.png" alt="">
+                        <h6>Vegetables</h6>
+                        <p>5 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #F2FCE4;">
+                        <img src="images/category7.png" alt="">
+                        <h6>Strawberry</h6>
+                        <p>6 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FEEFEA;">
+                        <img src="images/category8.png" alt="">
+                        <h6>Black plum</h6>
+                        <p>11 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #F2FCE4;">
+                        <img src="images/category9.png" alt="">
+                        <h6>Custard apple</h6>
+                        <p>10 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FEEFEA;">
+                        <img src="images/category10.png" alt="">
+                        <h6>Coffe & Tea</h6>
+                        <p>8 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #FFF3FF;">
+                        <img src="images/category6.png" alt="">
+                        <h6>Vegetables</h6>
+                        <p>10 items</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="categories-box" style="background-color: #F2FCE4;">
+                        <img src="images/category7.png" alt="">
+                        <h6>Strawberry</h6>
+                        <p>11 items</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CATEGORIES SECTIONS -->
+
+        <section class="categories-sections">
+            <div class="section-one sections">
+                <h3>Everyday Fresh & Clean with Our Products</h3>
+                <button>Shop Now              
+                    <svg width="15" height="15" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23333 2.47338L4.71333 4.24385e-05L3.87333 0.793375L5.83333 2.70671H0V3.87338H5.83333L3.87333 5.83338L4.71333 6.62671L7.23333 4.15338C7.45111 3.90449 7.56 3.62449 7.56 3.31338C7.56 3.00226 7.45111 2.72226 7.23333 2.47338Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="section-two sections">
+                <h3>Make your Breakfast Healthy and Easy</h3>
+                <button>Shop Now              
+                    <svg width="15" height="15" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23333 2.47338L4.71333 4.24385e-05L3.87333 0.793375L5.83333 2.70671H0V3.87338H5.83333L3.87333 5.83338L4.71333 6.62671L7.23333 4.15338C7.45111 3.90449 7.56 3.62449 7.56 3.31338C7.56 3.00226 7.45111 2.72226 7.23333 2.47338Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="section-three sections">
+                <h3>The best Organic Products Online</h3>
+                <button>Shop Now              
+                    <svg width="15" height="15" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23333 2.47338L4.71333 4.24385e-05L3.87333 0.793375L5.83333 2.70671H0V3.87338H5.83333L3.87333 5.83338L4.71333 6.62671L7.23333 4.15338C7.45111 3.90449 7.56 3.62449 7.56 3.31338C7.56 3.00226 7.45111 2.72226 7.23333 2.47338Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- POPUAR PRODUCTS  -->
+        <section class="pop-products">
+            <div class="pop-heading">
+                <h2>Popular Products</h2>
+                <div class="pop-products-section">
+                    <a class="active" href="">All</a>
+                    <a href="">Baking material</a>
+                    <a href="">Fresh Fruits</a>
+                    <a href="">Milks & Dairies</a>
+                    <a href="">Meats</a>
+                    <a href="">Vegetables</a>
+                </div>
+            </div>
+
+            <div class="pop-box-section">
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products1.png" alt="">
+                    <span class="pop-discount">10%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $17.85 <span>$19.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products2.png" alt="">
+                    <span class="pop-discount">13%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Organic Cage Grade A Large <br> Eggs</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Hambger Hel</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $21.00 <span>$24.00</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products3.png" alt="">
+                    <span class="pop-discount">10%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Haagen Caramel Cone Ice Cream <br>Boxed</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">1
+                        </div>
+                        <p class="pop-para">By <span>Hambger Hel</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $22.85 <span>$24.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products4.png" alt="">
+                    <span class="pop-discount pop-disc">66%</span>
+                    <span class="pop-sale">Sale</span>
+                    
+                    <div class="pop-content">
+                        <p>Fresh Seafood</p>
+                        <h6>All Natural Style Chicken <br>Meatballs</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Wonderful</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $23.00 <span>$122.00</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products5.png" alt="">
+                    <span class="pop-discount">8%</span>
+                    <span class="pop-sale">Hot</span>
+
+                    <div class="pop-content">
+                        <p>Fresh Fruit</p>
+                        <h6>Blue Almonds Lightly Salted <br> Vegetables</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $23.85 <span>$25.85</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products6.png" alt="">
+                    <span class="pop-discount pop-eight">8%</span>
+                    <div class="pop-content">
+                        <p>Fresh Seafood</p>
+                        <h6>Gorton's Beer Battered Fish <br> Fillets</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Hambger Hel</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $23.85 <span>$25.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products7.png" alt="">
+                    <span class="pop-discount">13%</span>
+                    <div class="pop-content">
+                        <p>Fresh Fruit</p>
+                        <h6>Seeds of Change Organic Red <br> Rice</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">2
+                        </div>
+                        <p class="pop-para">By <span>NestFood</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $28.85 <span>$24.00</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products8.png" alt="">
+                    <span class="pop-discount pop-3">3%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Canada Dry Ginger Ale - 2 L<br> Bottle</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Hambger Hel</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $32.85 <span>$33.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products9.png" alt="">
+                    <span class="pop-discount">6%</span>
+                    <div class="pop-content">
+                        <p>Clothing & beauty</p>
+                        <h6>Encore Seafoods Stuffed <br> Alaskan</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Hambger Hel</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $35.85 <span>$37.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products10.png" alt="">
+                    <span class="pop-discount pop-8">8%</span>
+                    <span class="pop-sale">New</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Angie's Sweet & Salty Kettle <br> Corn</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $48.85 <span>$52.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- DAILY BEST SELLS  -->
+        <section>
+            <div class="pop-heading">
+                <div class="best-sells">
+                    <h2>Daily Best Sells</h2>
+                    <div class="categories-arrow categories-swiper-pagination">
+                        <button class="arrow2 categories-swiper-button-prev">
+                            <img src="images/left-arrow.svg" alt="">
+                        </button>
+                        <button class="arrow2 categories-swiper-button-next">
+                            <img src="images/right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="pop-products-section">
+                    <a class="active" href="">All</a>
+                    <a href="">Deals Of the Day</a>
+                    <a href="">Beauty</a>
+                    <a href="">Bread & Juice</a>
+                    <a href="">Drinks</a>
+                    <a href="">Milks</a>
+                </div>
+            </div>
+
+            <div class="best-sells-section">
+                <div class="bring-nature sections">
+                <h2>Bring nature<br> into your <br> home</h2>
+                <button>Shop Now              
+                    <svg width="15" height="15" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23333 2.47338L4.71333 4.24385e-05L3.87333 0.793375L5.83333 2.70671H0V3.87338H5.83333L3.87333 5.83338L4.71333 6.62671L7.23333 4.15338C7.45111 3.90449 7.56 3.62449 7.56 3.31338C7.56 3.00226 7.45111 2.72226 7.23333 2.47338Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+
+                <div class="sells-section">
+                    <div class="pop-boxes">
+                        <img src="images/popular-products7.png" alt="">
+                        <span class="pop-discount">10%</span>
+                        <div class="pop-content">
+                            <p>Baking material</p>
+                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <div class="pop-star">
+                                <img src="images/star.svg" alt="">0
+                            </div>
+                            <p class="pop-para">By <span>Country Crock</span></p>
+                            <div class="pop-price">
+                                <a href="" class="pop-dollar-price">
+                                    $17.85 <span>$19.80</span>
+                                </a>
+                                <button class="pop-cart">
+                                    <img src="images/pop-cart.svg" alt="">Add 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop-boxes">
+                    <img src="images/popular-products10.png" alt="">
+                    <span class="pop-discount">10%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $17.85 <span>$19.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products5.png" alt="">
+                    <span class="pop-discount">10%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $17.85 <span>$19.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-boxes">
+                    <img src="images/popular-products1.png" alt="">
+                    <span class="pop-discount">10%</span>
+                    <div class="pop-content">
+                        <p>Baking material</p>
+                        <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                        <div class="pop-star">
+                            <img src="images/star.svg" alt="">0
+                        </div>
+                        <p class="pop-para">By <span>Country Crock</span></p>
+                        <div class="pop-price">
+                            <a href="" class="pop-dollar-price">
+                                $17.85 <span>$19.80</span>
+                            </a>
+                            <button class="pop-cart">
+                                <img src="images/pop-cart.svg" alt="">Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
