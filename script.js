@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+const swiper1 = new Swiper(".mySwiper", {
     loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // categories-swiper 
 
-var swiper = new Swiper(".categories-mySwiper", {
+const categoriesSwiper = new Swiper(".categories-mySwiper", {
     loop: true,
       slidesPerView: 10,
       spaceBetween: 10,
@@ -24,20 +24,62 @@ var swiper = new Swiper(".categories-mySwiper", {
       // spaceBetween: 20,
     },
     540: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       // spaceBetween: 20,
     },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       // spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 5,
       // spaceBetween: 50,
     },
     1024: {
-      slidesPerView: 10,
+      slidesPerView: 7,
       // spaceBetween: 50,
     },
+    1200:{
+      slidesPerView: 8,
+    },
+    1300:{
+      slidesPerView: 9,
+    },
+    1600:{
+      slidesPerView: 10,
+    }
   },
     });
+
+    console.log(document.querySelector("#best-mySwiper"));
+
+const bestMySwiper = new Swiper("#best-mySwiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: ".best-swiper-button-next",
+    prevEl: ".best-swiper-button-prev",
+  },
+  breakpoints: {
+    468: {
+      slidesPerView: 1,
+    },
+    530: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    1200:{
+      slidesPerView: 4,
+    },
+    1600: {
+      slidesPerView: 5,
+    }
+  },
+});
