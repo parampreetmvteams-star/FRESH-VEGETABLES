@@ -333,7 +333,7 @@ button {
     width: 100%;
     border: none;
     border-radius: 30px;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 9rem 1.5rem 2rem;
 }
 .email-section input::placeholder{
     font-size: 1rem;
@@ -896,16 +896,22 @@ h2{
     line-height: 1.8;
     font-size: 17px;
 }
-.footer-col p img{
+.footer-col a img{
     padding-right: 0.5rem;
 }
 .footer-col p{
+    line-height: 1.6;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-family: var(--lato);
+}
+.footer-col a{
     line-height: 1.6;
     color:var(--text-dark);
     font-weight: 400;
     font-family: var(--lato);
 }
-.footer-col p a{
+.footer-col a span{
     color: var(--bg-green);
     font-weight: 500;
 }
