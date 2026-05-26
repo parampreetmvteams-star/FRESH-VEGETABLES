@@ -49,9 +49,8 @@ const categoriesSwiper = new Swiper(".categories-mySwiper", {
       slidesPerView: 10,
     }
   },
-    });
+});
 
-    console.log(document.querySelector("#best-mySwiper"));
 
 const bestMySwiper = new Swiper("#best-mySwiper", {
   loop: true,
@@ -83,3 +82,14 @@ const bestMySwiper = new Swiper("#best-mySwiper", {
     }
   },
 });
+
+const menu = document.getElementById('mobileMenu');
+const hamburger = document.getElementById('hamburger');
+const closeMenu = document.getElementById('cross-icon');
+
+hamburger.addEventListener("click", () =>{
+  menu.classList.toggle('open');
+});
+closeMenu.addEventListener("click",() =>{
+  menu.classList.toggle('open');
+})
