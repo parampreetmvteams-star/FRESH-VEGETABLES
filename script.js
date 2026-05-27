@@ -88,6 +88,14 @@ const menu = document.getElementById('mobileMenu');
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.getElementById('cross-icon');
 
+const dropdown = document.querySelector(".dropdown");
+const trigger = dropdown.querySelector(".nav-items-name");
+
+trigger.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdown.classList.toggle("open");
+});
+
 hamburger.addEventListener("click", () =>{
   menu.classList.toggle('open');
 });
