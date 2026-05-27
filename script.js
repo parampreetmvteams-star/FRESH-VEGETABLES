@@ -87,18 +87,21 @@ const bestMySwiper = new Swiper("#best-mySwiper", {
 const menu = document.getElementById('mobileMenu');
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.getElementById('cross-icon');
+const overLay = document.getElementById("overlay");
+const dropDown = document.getElementById("dropdown");
+const megaMenuOpen = document.getElementById("nav-item-name");
 
-const dropdown = document.querySelector(".dropdown");
-const trigger = dropdown.querySelector(".nav-items-name");
-
-trigger.addEventListener("click", function (e) {
-    e.preventDefault();
-    dropdown.classList.toggle("open");
+megaMenuOpen.addEventListener("click",(e) => {
+  e.preventDefault();
+  dropDown.classList.toggle("open");
 });
-
-hamburger.addEventListener("click", () =>{
+  
+  hamburger.addEventListener("click", () =>{
   menu.classList.toggle('open');
+  overLay.classList.toggle("open");
 });
+
 closeMenu.addEventListener("click",() =>{
   menu.classList.toggle('open');
+  overLay.classList.toggle("open");
 })

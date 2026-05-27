@@ -37,10 +37,26 @@
 
             <div class="need-help">
                 <p>Need help? Call Us: <span>+1800900122</span></p>
-                <p >English</p>
-                <button class="english-language"><img src="images/english-down-icon.svg" alt=""></button>
-                <p>INR</p>
-                <button><img src="images/english-down-icon.svg" alt=""></button>
+
+                <div class="choose-language">
+                    <select id="english">
+                        <option value="english">English</option>
+                        <option value="punjabi">Punjabi</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+                
+                <div class="choose-currency">
+                    <select id="₹INR">
+                        <option>₹INR</option>
+                        <option>$USD</option>
+                        <option>€EUR</option>
+                        <option>£GBP</option>
+                        <option>$AUD</option>
+                        <option>$CAD</option>
+                    </select>
+                </div>
+
             </div>
         </div> 
         <div class="border-bottom"></div>
@@ -98,18 +114,148 @@
         </div>
         <div class="border-bottom"></div>
 
-        <div class="container nav-end">
+        <div class="drop-down">
+            <div class="container nav-end">
+                <a href="#" class="browse-categories">
+                    <img src="images/browse.svg" alt="">Browse All Categories
+                    <img src="images/browse-icon.svg" alt="">
+                </a>
+                <div class="nav-items">
+                    <a href="#" class="nav-items-name">
+                        <img src="images/hot-deals.svg" alt="">Hot Deals
+                    </a>
+
+                    <div class="dropdown">
+                        <a href="#" class="nav-items-name active">
+                            Home
+                            <svg width="10" height="10" viewBox="0 0 8 8" fill="none">
+                                <path d="M7.52 1.97334L4.24 5.28001C4.16889 5.33334 4.08889 5.36001 4 5.36001C3.91111 5.36001 3.83111 5.33334 3.76 5.28001L0.48 1.97334L0 2.45334L3.28 5.73334C3.49333 5.92889 3.73333 6.02667 4 6.02667C4.26667 6.02667 4.50667 5.92889 4.72 5.73334L8 2.45334L7.52 1.97334Z" fill="#3BB77E"/>
+                            </svg>
+                        </a>
+
+                        <!-- Mega Menu -->
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>Vegetables</h4>
+                                    <a href="#">Fresh Vegetables</a>
+                                    <a href="#">Organic Vegetables</a>
+                                    <a href="#">Leafy Greens</a>
+                                    <a href="#">Root Vegetables</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Fruits</h4>
+                                    <a href="#">Seasonal Fruits</a>
+                                    <a href="#">Tropical Fruits</a>
+                                    <a href="#">Dry Fruits</a>
+                                    <a href="#">Citrus Fruits</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Dairy</h4>
+                                    <a href="#">Milk</a>
+                                    <a href="#">Cheese</a>
+                                    <a href="#">Butter</a>
+                                    <a href="#">Yogurt</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Beverages</h4>
+                                    <a href="#">Tea</a>
+                                    <a href="#">Coffee</a>
+                                    <a href="#">Juices</a>
+                                    <a href="#">Soft Drinks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-items-name">About</a>
+
+                    <a href="#" class="nav-items-name">
+                        Shop
+                        <img src="images/nav-items-icon.svg" alt="">
+                    </a>
+
+                    <a href="#" class="nav-items-name">
+                        Vendors
+                        <img src="images/nav-items-icon.svg" alt="">
+                    </a>
+
+                    <a href="#" class="nav-items-name">
+                        Mega Menu
+                        <img src="images/nav-items-icon.svg" alt="">
+                    </a>
+
+                    <a href="#" class="nav-items-name">
+                        Blog
+                        <img src="images/nav-items-icon.svg" alt="">
+                    </a>
+
+                    <a href="#" class="nav-items-name">
+                        Pages
+                        <img src="images/nav-items-icon.svg" alt="">
+                    </a>
+
+                    <a href="#" class="nav-items-name">Contact</a>
+
+                </div>
+
+                <div class="nav-support-center">
+                    <img src="images/support-center.svg" alt="">
+                    <div class="support-center-content">
+                        <a href="#">1900888123</a><br>
+                        <p>24/7 Support Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="border-bottom"></div>
+
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="drop-down" >
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="cross-icon" id="cross-icon">
+                <svg width="50px" height="50px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#3BB77E"/>
+                </svg>
+            </button>
+
+            <div class="became-icon became-icons">
+                <div class="vendor-icons">
+                    <a href="#">
+                    <img src="images/compare.svg" alt="">
+                    </a>
+                    <span>0</span>
+                    <p>Compare</p>
+                </div>
+
+                <div class="vendor-icons">
+                    <a href="#">
+                    <img src="images/account.svg" alt="">
+                    </a>
+                    <p>Account</p>
+                </div>
+            </div>
+            
             <a href="#" class="browse-categories">
                 <img src="images/browse.svg" alt="">Browse All Categories
                 <img src="images/browse-icon.svg" alt="">
             </a>
-            <div class="nav-items">
-                <a href="#" class="nav-items-name">
+
+            <div class="nav-items" id="nav-items2">
+
+                <a href="#" class="nav-items-name nav-items-name2">
                     <img src="images/hot-deals.svg" alt="">Hot Deals
                 </a>
 
-                <div class="dropdown">
-                    <a href="#" class="nav-items-name active">
+                <div class="dropdown" id="dropdown">
+                    <a href="#" class="nav-items-name active" id="nav-item-name">
                         Home
                         <svg width="10" height="10" viewBox="0 0 8 8" fill="none">
                             <path d="M7.52 1.97334L4.24 5.28001C4.16889 5.33334 4.08889 5.36001 4 5.36001C3.91111 5.36001 3.83111 5.33334 3.76 5.28001L0.48 1.97334L0 2.45334L3.28 5.73334C3.49333 5.92889 3.73333 6.02667 4 6.02667C4.26667 6.02667 4.50667 5.92889 4.72 5.73334L8 2.45334L7.52 1.97334Z" fill="#3BB77E"/>
@@ -118,7 +264,8 @@
 
                     <!-- Mega Menu -->
                     <div class="mega-menu">
-                        <div class="mega-column">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
                             <h4>Vegetables</h4>
                             <a href="#">Fresh Vegetables</a>
                             <a href="#">Organic Vegetables</a>
@@ -149,38 +296,35 @@
                             <a href="#">Juices</a>
                             <a href="#">Soft Drinks</a>
                         </div>
+                        </div>
                     </div>
                 </div>
 
-                <a href="#" class="nav-items-name">About</a>
+                <a href="#" class="nav-items-name nav-items-name2">About
+                </a>
 
-                <a href="#" class="nav-items-name">
-                    Shop
+                <a href="#" class="nav-items-name nav-items-name2">Shop
                     <img src="images/nav-items-icon.svg" alt="">
                 </a>
 
-                <a href="#" class="nav-items-name">
-                    Vendors
+                <a href="#" class="nav-items-name nav-items-name2">Vendors
                     <img src="images/nav-items-icon.svg" alt="">
                 </a>
 
-                <a href="#" class="nav-items-name">
-                    Mega Menu
+                <a href="#" class="nav-items-name nav-items-name2">Mega Menu
                     <img src="images/nav-items-icon.svg" alt="">
                 </a>
 
-                <a href="#" class="nav-items-name">
-                    Blog
+                <a href="#" class="nav-items-name nav-items-name2">Blog
                     <img src="images/nav-items-icon.svg" alt="">
                 </a>
 
-                <a href="#" class="nav-items-name">
-                    Pages
+                <a href="#" class="nav-items-name nav-items-name2">Pages
                     <img src="images/nav-items-icon.svg" alt="">
                 </a>
 
-                <a href="#" class="nav-items-name">Contact</a>
-
+                <a href="#" class="nav-items-name nav-items-name2">Contact
+                </a>
             </div>
 
             <div class="nav-support-center">
@@ -190,126 +334,8 @@
                     <p>24/7 Support Center</p>
                 </div>
             </div>
+
         </div>
-
-        <div class="border-bottom"></div>
-
-    </header>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="cross-icon" id="cross-icon">
-            <svg width="50px" height="50px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#3BB77E"/>
-            </svg>
-        </button>
-
-        <div class="became-icon became-icons">
-            <div class="vendor-icons">
-                <a href="#">
-                <img src="images/compare.svg" alt="">
-                </a>
-                <span>0</span>
-                <p>Compare</p>
-            </div>
-
-            <div class="vendor-icons">
-                <a href="#">
-                <img src="images/account.svg" alt="">
-                </a>
-                <p>Account</p>
-            </div>
-        </div>
-        
-        <a href="#" class="browse-categories">
-            <img src="images/browse.svg" alt="">Browse All Categories
-            <img src="images/browse-icon.svg" alt="">
-        </a>
-
-        <div class="nav-items" id="nav-items2">
-
-            <a href="#" class="nav-items-name nav-items-name2">
-                <img src="images/hot-deals.svg" alt="">Hot Deals
-            </a>
-
-            <div class="dropdown">
-                <a href="#" class="nav-items-name active">
-                    Home
-                    <svg width="10" height="10" viewBox="0 0 8 8" fill="none">
-                        <path d="M7.52 1.97334L4.24 5.28001C4.16889 5.33334 4.08889 5.36001 4 5.36001C3.91111 5.36001 3.83111 5.33334 3.76 5.28001L0.48 1.97334L0 2.45334L3.28 5.73334C3.49333 5.92889 3.73333 6.02667 4 6.02667C4.26667 6.02667 4.50667 5.92889 4.72 5.73334L8 2.45334L7.52 1.97334Z" fill="#3BB77E"/>
-                    </svg>
-                </a>
-
-                <!-- Mega Menu -->
-                <div class="mega-menu">
-                    <div class="mega-column">
-                        <h4>Vegetables</h4>
-                        <a href="#">Fresh Vegetables</a>
-                        <a href="#">Organic Vegetables</a>
-                        <a href="#">Leafy Greens</a>
-                        <a href="#">Root Vegetables</a>
-                    </div>
-
-                    <div class="mega-column">
-                        <h4>Fruits</h4>
-                        <a href="#">Seasonal Fruits</a>
-                        <a href="#">Tropical Fruits</a>
-                        <a href="#">Dry Fruits</a>
-                        <a href="#">Citrus Fruits</a>
-                    </div>
-
-                    <div class="mega-column">
-                        <h4>Dairy</h4>
-                        <a href="#">Milk</a>
-                        <a href="#">Cheese</a>
-                        <a href="#">Butter</a>
-                        <a href="#">Yogurt</a>
-                    </div>
-
-                    <div class="mega-column">
-                        <h4>Beverages</h4>
-                        <a href="#">Tea</a>
-                        <a href="#">Coffee</a>
-                        <a href="#">Juices</a>
-                        <a href="#">Soft Drinks</a>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="nav-items-name nav-items-name2">About
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Shop
-                <img src="images/nav-items-icon.svg" alt="">
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Vendors
-                <img src="images/nav-items-icon.svg" alt="">
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Mega Menu
-                <img src="images/nav-items-icon.svg" alt="">
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Blog
-                <img src="images/nav-items-icon.svg" alt="">
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Pages
-                <img src="images/nav-items-icon.svg" alt="">
-            </a>
-
-            <a href="#" class="nav-items-name nav-items-name2">Contact
-            </a>
-        </div>
-
-        <div class="nav-support-center">
-            <img src="images/support-center.svg" alt="">
-            <div class="support-center-content">
-                <a href="#">1900888123</a><br>
-                <p>24/7 Support Center</p>
-            </div>
-        </div>
-
     </div>
 
     <nav>
@@ -323,6 +349,7 @@
             </button>
 
             <a href="index.html"><img src="images/logo.svg" alt=""></a>
+
             <div class="mobile-icons">
                 <div class="nav-wishlist">
                     <a href="#">
@@ -603,7 +630,7 @@
                     <span class="pop-discount">10%</span>
                     <div class="pop-content">
                         <p>Baking material</p>
-                        <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                        <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -624,7 +651,7 @@
                     <span class="pop-discount">13%</span>
                     <div class="pop-content">
                         <p>Baking material</p>
-                        <h6>Organic Cage Grade A Large <br> Eggs</h6>
+                        <h6><a href="#">Organic Cage Grade A Large <br> Eggs</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -645,7 +672,7 @@
                     <span class="pop-discount">10%</span>
                     <div class="pop-content">
                         <p>Baking material</p>
-                        <h6>Haagen Caramel Cone Ice Cream <br>Boxed</h6>
+                        <h6><a href="#">Haagen Caramel Cone Ice Cream <br>Boxed</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">1
                         </div>
@@ -668,7 +695,7 @@
                     
                     <div class="pop-content">
                         <p>Fresh Seafood</p>
-                        <h6>All Natural Style Chicken <br>Meatballs</h6>
+                        <h6><a href="#">All Natural Style Chicken <br>Meatballs</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -691,7 +718,7 @@
 
                     <div class="pop-content">
                         <p>Fresh Fruit</p>
-                        <h6>Blue Almonds Lightly Salted <br> Vegetables</h6>
+                        <h6><a href="#">Blue Almonds Lightly Salted <br> Vegetables</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -712,7 +739,7 @@
                     <span class="pop-discount pop-eight">8%</span>
                     <div class="pop-content">
                         <p>Fresh Seafood</p>
-                        <h6>Gorton's Beer Battered Fish <br> Fillets</h6>
+                        <h6><a href="#">Gorton's Beer Battered Fish <br> Fillets</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -733,7 +760,7 @@
                     <span class="pop-discount">13%</span>
                     <div class="pop-content">
                         <p>Fresh Fruit</p>
-                        <h6>Seeds of Change Organic Red <br> Rice</h6>
+                        <h6><a href="#">Seeds of Change Organic Red <br> Rice</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">2
                         </div>
@@ -754,7 +781,7 @@
                     <span class="pop-discount pop-3">3%</span>
                     <div class="pop-content">
                         <p>Baking material</p>
-                        <h6>Canada Dry Ginger Ale - 2 L<br> Bottle</h6>
+                        <h6><a href="#">Canada Dry Ginger Ale - 2 L<br> Bottle</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -775,7 +802,7 @@
                     <span class="pop-discount">6%</span>
                     <div class="pop-content">
                         <p>Clothing & beauty</p>
-                        <h6>Encore Seafoods Stuffed <br> Alaskan</h6>
+                        <h6><a href="#">Encore Seafoods Stuffed <br> Alaskan</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -797,7 +824,7 @@
                     <span class="pop-sale">New</span>
                     <div class="pop-content">
                         <p>Baking material</p>
-                        <h6>Angie's Sweet & Salty Kettle <br> Corn</h6>
+                        <h6><a href="#">Angie's Sweet & Salty Kettle <br> Corn</a></h6>
                         <div class="pop-star">
                             <img src="images/star.svg" alt="">0
                         </div>
@@ -833,12 +860,12 @@
                     </div>
                 </div>
                 <div class="pop-products-section">
-                    <a class="active" href="">All</a>
-                    <a href="#">Deals Of the Day</a>
-                    <a href="#">Beauty</a>
-                    <a href="#">Bread & Juice</a>
-                    <a href="#">Drinks</a>
-                    <a href="#">Milks</a>
+                    <button class="active" href="">All</button>
+                    <button href="#">Deals Of the Day</button>
+                    <button href="#">Beauty</button>
+                    <button href="#">Bread & Juice</button>
+                    <button href="#">Drinks</button>
+                    <button href="#">Milks</button>
                 </div>
             </div>
 
@@ -861,7 +888,7 @@
                         <span class="pop-discount">10%</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -889,7 +916,7 @@
                         <span class="pop-sale">New</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -916,7 +943,7 @@
                         <span class="pop-discount">10%</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -944,7 +971,7 @@
                         <span class="pop-sale">Hot</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -971,7 +998,7 @@
                         <span class="pop-discount">10%</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -999,7 +1026,7 @@
                         <span class="pop-sale">New</span>
                         <div class="pop-content">
                             <p>Baking material</p>
-                            <h6>Foster Farms Takeout Crispy<br> Classic</h6>
+                            <h6><a href="#">Foster Farms Takeout Crispy<br> Classic</a></h6>
                             <div class="pop-star">
                                 <img src="images/star.svg" alt="">0
                             </div>
@@ -1052,7 +1079,7 @@
                         </div>
                     </div>
                     <div class="deals-detail pop-content">
-                        <h6>Organic Cage Grade A Large Eggs</h6>
+                        <h6><a href="#">Organic Cage Grade A Large Eggs</a></h6>
                         <p class="pop-para">By <a href="#">Country Crock</a></p>
                         <div class="pop-price">
                             <a href="#" class="pop-dollar-price">
@@ -1087,7 +1114,7 @@
                         </div>
                     </div>
                     <div class="deals-detail pop-content">
-                        <h6>Organic Cage Grade A Large Eggs</h6>
+                        <h6><a href="#">Organic Cage Grade A Large Eggs</a></h6>
                         <p class="pop-para">By <a href="#">Country Crock</a></p>
                         <div class="pop-price">
                             <a href="#" class="pop-dollar-price">
@@ -1122,7 +1149,7 @@
                     </div>
                 </div>
                 <div class="deals-detail pop-content">
-                    <h6>Organic Cage Grade A Large Eggs</h6>
+                    <h6><a href="#">Organic Cage Grade A Large Eggs</a></h6>
                     <p class="pop-para">By <a href="#">Country Crock</a></p>
                     <div class="pop-price">
                         <a href="#" class="pop-dollar-price">
@@ -1157,7 +1184,7 @@
                     </div>
                 </div>
                 <div class="deals-detail pop-content">
-                    <h6>Organic Cage Grade A Large Eggs</h6>
+                    <h6><a href="#">Organic Cage Grade A Large Eggs</a></h6>
                     <p class="pop-para">By <a href="#">Country Crock</a></p>
                     <div class="pop-price">
                         <a href="#" class="pop-dollar-price">
@@ -1184,7 +1211,7 @@
                         <div class="first-product">
                             <img src="images/popular-products3.png" alt="">
                             <div class="pop-content first-product-content"> 
-                                <h6>Haagen Caramel Cone Ice Cream Boxed</h6>
+                                <h6><a href="#">Haagen Caramel Cone Ice Cream Boxed</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1199,7 +1226,7 @@
                         <div class="first-product">
                             <img src="images/popular-products7.png" alt="">
                             <div class="pop-content first-product-content"> 
-                                <h6>Haagen Caramel Cone Ice Cream Boxed</h6>
+                                <h6><a href="#">Haagen Caramel Cone Ice Cream Boxed</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1214,7 +1241,7 @@
                         <div class="first-product">
                             <img src="images/popular-products5.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Blue Almonds Lightly Salted Vegetables</h6>
+                                <h6><a href="#">Blue Almonds Lightly Salted Vegetables</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1235,7 +1262,7 @@
                         <div class="first-product">
                             <img src="images/popular-products1.png" alt="">
                             <div class="pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1250,7 +1277,7 @@
                         <div class="first-product">
                             <img src="images/popular-products3.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1265,7 +1292,7 @@
                         <div class="first-product">
                             <img src="images/popular-products6.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1286,7 +1313,7 @@
                         <div class="first-product">
                             <img src="images/popular-products2.png" alt="">
                             <div class="pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1301,7 +1328,7 @@
                         <div class="first-product">
                             <img src="images/recently-added1.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1316,7 +1343,7 @@
                         <div class="first-product">
                             <img src="images/recently-added2.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1337,7 +1364,7 @@
                         <div class="first-product">
                             <img src="images/popular-products9.png" alt="">
                             <div class="pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1352,7 +1379,7 @@
                         <div class="first-product">
                             <img src="images/popular-products10.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
@@ -1367,7 +1394,7 @@
                         <div class="first-product">
                             <img src="images/recently-added2.png" alt="">
                             <div class=" pop-content first-product-content"> 
-                                <h6>Foster Farms Takeout Crispy Classic</h6>
+                                <h6><a href="#">Foster Farms Takeout Crispy Classic</a></h6>
                                 <div class="pop-star">
                                     <img src="images/star.svg" alt="">0
                                 </div>
