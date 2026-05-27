@@ -1306,12 +1306,6 @@ h2{
     .stay-home-section .email-section{
         margin-top: 0.1rem;
     }
-    .nav-center-right,
-    .nav-top,
-    .nav-support-center,
-    .browse-categories{
-        display: none;
-    }
     .nav-items{
         gap: 1rem;
     }
