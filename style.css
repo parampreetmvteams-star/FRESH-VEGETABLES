@@ -1273,7 +1273,9 @@ h2{
     }
 }
 @media (max-width: 768px){
-    
+    .best-sells {
+        gap: 2rem;
+    }
     .hero-content{
         padding:4rem;
     }
