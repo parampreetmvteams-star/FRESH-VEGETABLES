@@ -330,7 +330,7 @@ button {
     box-shadow: -4px 0 20px rgba(0,0,0,0.12);
     position: fixed;
     top: 0;
-    /* height: 100vh; */
+    height: 100dvh;
     min-width: 320px;
     z-index: 1000;
     left:-320px;
